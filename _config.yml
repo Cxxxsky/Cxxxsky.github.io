@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Yuxuan Yang"
 title_separator          : "-"
 name                     : &name "Yuxuan Yang"
-description              : &description "Yuxuan Yang is a PhD student at HIT Shenzhen, jointly trained at SLAI. Research interests include computational pathology, spatial transcriptomics, and medical image analysis."
+description              : &description "Yuxuan Yang is a PhD student at HIT Shenzhen and SLAI. Research interests include AI for Science, foundation models, world models, and multimodal learning."
 url                      : "https://cxxxsky.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Cxxxsky/Cxxxsky.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "" # Upload images/profile.png, then set this to "profile.png".
   name             : *name
   pronouns         : # example: "she/her"  
-  bio              : "PhD student · Computational pathology & spatial transcriptomics"
+  bio              : "PhD student · AI for Science"
   location         : "Shenzhen, China"
   employer         : "HIT Shenzhen / SLAI"
   uri              : "https://cxxxsky.github.io"
