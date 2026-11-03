@@ -1,4 +1,5 @@
 ---
+layout: single
 permalink: /
 title: ""
 excerpt: "Yuxuan Yang — AI for Science, foundation models, world models, and multimodal learning."
@@ -8,56 +9,45 @@ redirect_from:
   - /about.html
 ---
 
-# About me
-
-I am a Ph.D. student in Computer Science at **Harbin Institute of Technology, Shenzhen**, jointly trained at **SLAI (深圳河套学院)**. I am advised by **Prof. Yongbing Zhang**.
-
-My research interests lie in **AI for Science**, with a particular interest in **foundation models, world models, and multimodal learning**. I am interested in building models that learn transferable representations, predict how complex systems behave, and support scientific discovery. Biology and biomedicine are currently the main settings in which I explore these questions.
-
-My current work spans visual representation learning for whole-slide images and learning from spatial molecular measurements. I am also exploring cell foundation models and virtual cells, with an interest in modeling cellular states and responses to perturbations.
-
-Previously, I worked on **medical image analysis**, including multimodal detection and segmentation. I also interned at **United Imaging Healthcare**, where I worked on multimodal medical report generation.
-
-## Research interests
-
-- **Foundation models:** learning transferable representations that generalize across tasks, modalities, and contexts.
-- **World models:** learning predictive models of complex systems and their responses to changing conditions and interventions.
-- **Multimodal learning for science:** connecting images, molecular measurements, and other scientific observations.
-
-<span class="anchor" id="publications"></span>
-
-## Publications
-
-For my publications, please see my [Google Scholar profile](https://scholar.google.com/citations?user=h7xvYWIAAAAJ&hl=en).
-
-<span class="anchor" id="projects-experience"></span>
-
-## Projects & Experience
-
-### Whole-Slide Image Encoding
-*Research project · Manuscript submitted to ISBI*
-
-Research on visual representation learning and image encoding for whole-slide pathology images.
-
-### Spatial Evidence
-*Research in progress*
-
-Ongoing research on learning from spatial molecular measurements.
-
-### United Imaging Healthcare
-*Research Intern, Central Research Institute · Jul 2025 – Jan 2026*
-
-Worked on multimodal medical report generation, including image-grounded report generation and head CT reporting.
-
-### BeatWriter
-*Personal project · Music and generative AI*
-
-Built a prototype for accompaniment-conditioned lyric generation, combining audio-structure analysis with staged generation and structural checks.
-
-<span class="anchor" id="contact"></span>
-
-## Contact
-
-I welcome conversations about AI for Science, research collaborations, and visiting opportunities.
-
-Email: [cxxxsky@gmail.com](mailto:cxxxsky@gmail.com)
+<link rel="stylesheet" href="{{ '/assets/css/profile.css' | relative_url }}">
+<div class="yx-profile">
+<section id="about"><h2>About Me</h2>
+<p>I am a Ph.D. student in Computer Science at <strong>Harbin Institute of Technology, Shenzhen</strong>, jointly trained at <strong>SLAI (深圳河套学院)</strong>. I am advised by <strong>Prof. Yongbing Zhang</strong>.</p>
+<p>My research interests lie in <strong>AI for Science</strong>, particularly <strong>foundation models, world models, and multimodal learning</strong>. I am interested in models that learn transferable representations and predict how complex systems behave, including under changing conditions and interventions. I currently explore these questions in biology and biomedicine.</p>
+<p>My current work includes whole-slide image encoding and spatial molecular modeling. Previously, I worked on multimodal medical image analysis and interned at <strong>United Imaging Healthcare</strong> on medical report generation.</p>
+<p class="yx-profile-links"><a href="{{ site.author.googlescholar }}">Google Scholar ↗</a><a href="{{ '/cv/' | relative_url }}">Web CV ↗</a><a href="mailto:{{ site.author.email }}">Email ↗</a></p>
+<div class="yx-topics">
+  <div><h3>Foundation Models</h3><p>Transferable representations · Generalization</p></div>
+  <div><h3>World Models</h3><p>System dynamics · Perturbation responses</p></div>
+  <div><h3>Multimodal Learning</h3><p>Images · Molecular measurements · Scientific data</p></div>
+</div>
+</section>
+<section id="news"><h2>News</h2>
+<ul class="yx-news">{% for item in site.data.profile.news %}<li><time>{{ item.date }}</time><span>{{ item.text }}</span></li>{% endfor %}</ul>
+</section>
+<section id="publications"><div class="yx-heading-row"><h2>Selected Publications</h2><a href="{{ site.author.googlescholar }}">Full list on Scholar ↗</a></div>
+{% include profile-publications.html selected=true %}
+</section>
+<section id="research"><h2>Research &amp; Projects</h2>
+<div class="yx-projects">
+{% for project in site.data.profile.projects %}
+  <article class="yx-project"><div class="yx-project-top"><h3>{{ project.title }}</h3><span class="yx-status">{{ project.status }}</span></div><p class="yx-kicker">{{ project.kind }}</p><p>{{ project.text }}</p></article>
+{% endfor %}
+</div>
+</section>
+<section id="experience"><h2>Experience</h2>
+<div class="yx-timeline">
+{% for item in site.data.profile.experience %}
+  <div class="yx-timeline-item"><div class="yx-date">{{ item.date }}</div><div><h3>{{ item.title }}</h3><p class="yx-subtitle">{{ item.subtitle }}</p>{% if item.details.size > 0 %}<ul>{% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}</ul>{% endif %}</div></div>
+{% endfor %}
+</div>
+</section>
+<section id="education"><h2>Education</h2>
+<div class="yx-timeline">
+{% for item in site.data.profile.education %}
+  <div class="yx-timeline-item"><div class="yx-date">{{ item.date }}</div><div><h3>{{ item.title }}</h3><p class="yx-subtitle">{{ item.subtitle }}</p>{% if item.details.size > 0 %}<ul>{% for detail in item.details %}<li>{{ detail }}</li>{% endfor %}</ul>{% endif %}</div></div>
+{% endfor %}
+</div>
+</section>
+<section id="contact" class="yx-contact"><h2>Contact</h2><p>I welcome conversations about AI for Science, research collaborations, and visiting opportunities.</p><p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> · <a href="{{ '/cv/' | relative_url }}">Web CV</a> · <a href="https://github.com/{{ site.author.github }}">GitHub</a></p></section>
+</div>
