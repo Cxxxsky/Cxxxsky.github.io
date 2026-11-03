@@ -1,0 +1,20 @@
+hit:
+  name: Harbin Institute of Technology, Shenzhen
+  url: https://www.hitsz.edu.cn/
+  image: /images/logos/hit-emblem.svg
+  display_name: Harbin Institute of Technology, Shenzhen
+slai:
+  name: Shenzhen Loop Area Institute
+  url: https://www.slai.edu.cn/
+  image: /images/logos/slai-symbol.png
+  display_name: SLAI
+bjtu:
+  name: Beijing Jiaotong University
+  url: https://www.bjtu.edu.cn/
+  image: /images/logos/bjtu-emblem.svg
+  display_name: Beijing Jiaotong University
+uih:
+  name: United Imaging Healthcare
+  url: https://global.united-imaging.com/zh-cn/
+  image: /images/logos/united-imaging-symbol.png
+  display_name: United Imaging Healthcare

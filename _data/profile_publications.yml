@@ -13,7 +13,7 @@
     bone segmentation.
   doi: 10.1093/dmfr/twaf081
   paper_url: https://doi.org/10.1093/dmfr/twaf081
-  image: ''
+  image: /images/publications/dbf-net-framework.png
   selected: true
 - id: polar-detr
   title: 'PolarDETR: Enhancing Interpretability in Multi-modal Methods for Jawbone Lesion Detection in CBCT'
@@ -29,5 +29,5 @@
     consistency and image–text alignment.
   doi: 10.1007/978-3-032-04927-8_48
   paper_url: https://doi.org/10.1007/978-3-032-04927-8_48
-  image: ''
+  image: /images/publications/polardetr-framework.png
   selected: true

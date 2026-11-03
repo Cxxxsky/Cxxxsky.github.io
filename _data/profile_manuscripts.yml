@@ -1,0 +1,10 @@
+- id: dsb-net
+  title: Decoupling Shape Priors from Boundary Details for Segmentation in Ambiguous Medical Images
+  abbr: DSB-Net
+  status: Under review at ICASSP
+  role: Co-first author
+  icon: 🧩
+  authors_html: <strong>Yuxuan Yang<sup>†</sup></strong>, Xinyue Zhang<sup>†</sup>, Piaolin Hu, Chen Zhong, Ruohan
+    Ma, Yong Guo, Gang Li, Jupeng Li<sup>*</sup>
+  summary: DSB-Net decouples shape-prior learning from boundary-detail refinement for segmentation in ambiguous
+    medical images.

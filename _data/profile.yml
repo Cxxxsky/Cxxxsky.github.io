@@ -1,30 +1,42 @@
 news:
 - date: '2026'
+  text: DSB-Net, our work on decoupled shape–boundary learning, is under review at ICASSP.
+  icon: 📝
+  highlight: true
+- date: '2026'
   text: Submitted a manuscript on whole-slide image encoding to ISBI.
+  icon: 📤
 - date: '2026'
   text: Started my Ph.D. at HIT Shenzhen, jointly trained at SLAI.
+  icon: 🎓
 - date: '2025'
   text: PolarDETR was published at MICCAI 2025.
+  icon: 📘
 projects:
 - title: Whole-Slide Image Encoding
   status: Submitted to ISBI
   kind: Research project
   text: Visual representation learning and image encoding for whole-slide pathology images. The manuscript is under
     review.
+  icon: 🔬
 - title: Spatial Evidence
   status: In progress
   kind: Research project
   text: Ongoing research on learning from spatial molecular measurements.
+  icon: 🧬
 - title: Virtual Cells & Cell Foundation Models
   status: Exploration
   kind: Research direction
   text: Exploring models of cellular states and responses to perturbations, including participation in a team-based
     virtual-cell modeling competition.
-- title: BeatWriter
-  status: Prototype
-  kind: Personal project · Music & generative AI
-  text: An accompaniment-conditioned lyric-generation tool that combines audio-structure analysis, staged generation,
-    and structural checks.
+  icon: 🌐
+- title: 'DSB-Net: Shape–Boundary Decoupling'
+  status: ICASSP · Under review
+  kind: Research manuscript · Co-first author
+  icon: 🧩
+  highlight: true
+  text: Decouples shape-prior learning from boundary-detail refinement for segmentation in ambiguous medical images.
+  details_url: /publications/#manuscript-dsb-net
 experience:
 - date: Jul 2025 – Jan 2026
   title: United Imaging Healthcare
@@ -32,20 +44,30 @@ experience:
   details:
   - Led work on image-grounded multimodal medical report generation.
   - Contributed to head CT report generation, including image–text data preparation and instruction-tuning design.
+  organizations:
+  - uih
 education:
 - date: Jun 2026 – Present
   title: Harbin Institute of Technology, Shenzhen · SLAI
   subtitle: Ph.D. student in Computer Science · Joint training
   details:
-  - 'Advisor: Prof. Yongbing Zhang.'
+  - 'Advisor at HIT Shenzhen: Prof. Yongbing Zhang (张永兵).'
+  - 'Advisor at SLAI: Prof. Zhiguo Zhang (张治国).'
+  organizations:
+  - hit
+  - slai
 - date: Sep 2023 – Jun 2026
   title: Beijing Jiaotong University
   subtitle: M.Eng. in Electronic Information
   details: []
+  organizations:
+  - bjtu
 - date: Sep 2019 – Jun 2023
   title: Beijing Jiaotong University
   subtitle: B.Eng. in Information Engineering
   details: []
+  organizations:
+  - bjtu
 skills:
 - label: Programming & frameworks
   text: Python, PyTorch; deep-learning model implementation and experimental pipelines.

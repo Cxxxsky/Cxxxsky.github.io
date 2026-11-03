@@ -1,0 +1,5 @@
+enabled: false
+provider: MapMyVisitors
+script_url: ''
+script_id: mapmyvisitors
+privacy_url: https://mapmyvisitors.com/cookies/
