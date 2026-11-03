@@ -1,0 +1,33 @@
+- id: dbf-net
+  title: Cancellous bone segmentation network in cone beam CT images for post-orthognathic assessment of condylar
+    resorption
+  authors_before: ''
+  authors_after: ', Jupeng Li, Chen Zhong, Ruohan Ma, Xinyue Zhang, Yong Guo, Gang Li'
+  venue: Dentomaxillofacial Radiology
+  year: 2026
+  venue_detail: '55(3): 267–275'
+  role: First author
+  abbr: DBF-Net
+  label: DMFR 2026
+  description: A dual-branch fusion network uses cancellous-edge localization as an auxiliary task to improve CBCT
+    bone segmentation.
+  doi: 10.1093/dmfr/twaf081
+  paper_url: https://doi.org/10.1093/dmfr/twaf081
+  image: ''
+  selected: true
+- id: polar-detr
+  title: 'PolarDETR: Enhancing Interpretability in Multi-modal Methods for Jawbone Lesion Detection in CBCT'
+  authors_before: ''
+  authors_after: ', Chen Zhong, Xinyue Zhang, Ruohan Ma, Gang Li, Yong Guo, Jupeng Li'
+  venue: MICCAI
+  year: 2025
+  venue_detail: Medical Image Computing and Computer Assisted Intervention
+  role: First author
+  abbr: PolarDETR
+  label: MICCAI 2025
+  description: A multimodal detection framework using polar-coordinate positional priors, with metrics for structural
+    consistency and image–text alignment.
+  doi: 10.1007/978-3-032-04927-8_48
+  paper_url: https://doi.org/10.1007/978-3-032-04927-8_48
+  image: ''
+  selected: true

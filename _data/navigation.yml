@@ -1,10 +1,15 @@
-# Minimal navigation; no CV PDF or unfinished template pages.
 main:
-  - title: "Publications"
-    url: /#publications
-
-  - title: "Projects & Experience"
-    url: /#projects-experience
-
-  - title: "Contact"
-    url: /#contact
+- title: About
+  url: /#about
+- title: News
+  url: /#news
+- title: Publications
+  url: /publications/
+- title: Research
+  url: /#research
+- title: Experience
+  url: /#experience
+- title: Education
+  url: /#education
+- title: CV
+  url: /cv/

@@ -1,0 +1,63 @@
+news:
+- date: '2026'
+  text: Submitted a manuscript on whole-slide image encoding to ISBI.
+- date: '2026'
+  text: Started my Ph.D. at HIT Shenzhen, jointly trained at SLAI.
+- date: '2025'
+  text: PolarDETR was published at MICCAI 2025.
+projects:
+- title: Whole-Slide Image Encoding
+  status: Submitted to ISBI
+  kind: Research project
+  text: Visual representation learning and image encoding for whole-slide pathology images. The manuscript is under
+    review.
+- title: Spatial Evidence
+  status: In progress
+  kind: Research project
+  text: Ongoing research on learning from spatial molecular measurements.
+- title: Virtual Cells & Cell Foundation Models
+  status: Exploration
+  kind: Research direction
+  text: Exploring models of cellular states and responses to perturbations, including participation in a team-based
+    virtual-cell modeling competition.
+- title: BeatWriter
+  status: Prototype
+  kind: Personal project · Music & generative AI
+  text: An accompaniment-conditioned lyric-generation tool that combines audio-structure analysis, staged generation,
+    and structural checks.
+experience:
+- date: Jul 2025 – Jan 2026
+  title: United Imaging Healthcare
+  subtitle: Algorithm Research Intern · Central Research Institute, LLM Lab
+  details:
+  - Led work on image-grounded multimodal medical report generation.
+  - Contributed to head CT report generation, including image–text data preparation and instruction-tuning design.
+education:
+- date: Jun 2026 – Present
+  title: Harbin Institute of Technology, Shenzhen · SLAI
+  subtitle: Ph.D. student in Computer Science · Joint training
+  details:
+  - 'Advisor: Prof. Yongbing Zhang.'
+- date: Sep 2023 – Jun 2026
+  title: Beijing Jiaotong University
+  subtitle: M.Eng. in Electronic Information
+  details: []
+- date: Sep 2019 – Jun 2023
+  title: Beijing Jiaotong University
+  subtitle: B.Eng. in Information Engineering
+  details: []
+skills:
+- label: Programming & frameworks
+  text: Python, PyTorch; deep-learning model implementation and experimental pipelines.
+- label: Multimodal learning
+  text: Vision–language models, instruction tuning, image grounding, and image–text dataset construction.
+- label: Computer vision
+  text: Visual representation learning, object detection, 2D/3D medical image segmentation, and whole-slide image
+    modeling.
+- label: Additional interests
+  text: Music and generative AI; audio-structure analysis and digital audio production.
+honors:
+- year: '2025'
+  text: First-class Scholarship, Beijing Jiaotong University.
+- year: '2023'
+  text: First-class Scholarship, Beijing Jiaotong University.
