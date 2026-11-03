@@ -24,6 +24,38 @@ Previously, I worked on **medical image analysis**, including multimodal detecti
 - **World models:** learning predictive models of complex systems and their responses to changing conditions and interventions.
 - **Multimodal learning for science:** connecting images, molecular measurements, and other scientific observations.
 
+<span class="anchor" id="publications"></span>
+
+## Publications
+
+For my publications, please see my [Google Scholar profile](https://scholar.google.com/citations?user=h7xvYWIAAAAJ&hl=en).
+
+<span class="anchor" id="projects-experience"></span>
+
+## Projects & Experience
+
+### Whole-Slide Image Encoding
+*Research project · Manuscript submitted to ISBI*
+
+Research on visual representation learning and image encoding for whole-slide pathology images.
+
+### Spatial Evidence
+*Research in progress*
+
+Ongoing research on learning from spatial molecular measurements.
+
+### United Imaging Healthcare
+*Research Intern, Central Research Institute · Jul 2025 – Jan 2026*
+
+Worked on multimodal medical report generation, including image-grounded report generation and head CT reporting.
+
+### BeatWriter
+*Personal project · Music and generative AI*
+
+Built a prototype for accompaniment-conditioned lyric generation, combining audio-structure analysis with staged generation and structural checks.
+
+<span class="anchor" id="contact"></span>
+
 ## Contact
 
 I welcome conversations about AI for Science, research collaborations, and visiting opportunities.
