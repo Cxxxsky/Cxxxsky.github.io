@@ -1,5 +1,7 @@
-enabled: false
+# Your MapMyVisitors widget. Public embed ID; no account password is stored.
+# Third-party requests begin only after the visitor clicks Load visitor map.
+enabled: true
 provider: MapMyVisitors
-script_url: ''
+script_url: https://mapmyvisitors.com/map.js?d=JkgGCYmWUIDT4x2UKt9c-pHXRK8IPFUmxCDYoLgoE3o&cl=ffffff&w=a
 script_id: mapmyvisitors
 privacy_url: https://mapmyvisitors.com/cookies/
