@@ -1,0 +1,8 @@
+<h3 class="yx-institution-title">
+{% if item.organizations %}
+{% for key in item.organizations %}{% assign org = site.data.organizations[key] %}
+{% unless forloop.first %}<span class="yx-institution-separator" aria-hidden="true">·</span>{% endunless %}
+<a class="yx-institution-name" href="{{ org.url }}"><span class="yx-institution-mark"><img src="{{ org.image | relative_url }}" alt="" loading="lazy"></span><span>{{ org.display_name | escape }}</span></a>
+{% endfor %}
+{% else %}{{ item.title }}{% endif %}
+</h3>

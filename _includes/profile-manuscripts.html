@@ -1,0 +1,9 @@
+<div class="yx-manuscripts">
+{% for paper in site.data.profile_manuscripts %}
+<article class="yx-manuscript" id="manuscript-{{ paper.id }}">
+<div class="yx-badges"><span class="yx-status--red">{{ paper.status }}</span><span>{{ paper.role }}</span></div>
+<h3><span aria-hidden="true">{{ paper.icon }}</span> {{ paper.title }}</h3>
+<p class="yx-authors">{{ paper.authors_html }}</p><p class="yx-author-note">† Equal contribution. * Corresponding author.</p>
+<p>{{ paper.summary }}</p>
+</article>
+{% endfor %}</div>

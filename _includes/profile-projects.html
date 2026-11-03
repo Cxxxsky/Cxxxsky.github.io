@@ -1,0 +1,4 @@
+<div class="yx-projects">
+{% for project in site.data.profile.projects %}
+<article class="yx-project{% if project.highlight %} yx-project--highlight{% endif %}"><div class="yx-project-top"><h3><span aria-hidden="true">{{ project.icon }}</span> {{ project.title }}</h3><span class="yx-status{% if project.highlight %} yx-status--red{% endif %}">{{ project.status }}</span></div><p class="yx-kicker">{{ project.kind }}</p><p>{{ project.text }}</p>{% if project.details_url %}<p class="yx-project-details"><a href="{{ project.details_url | relative_url }}">Manuscript details ↗</a></p>{% endif %}</article>
+{% endfor %}</div>

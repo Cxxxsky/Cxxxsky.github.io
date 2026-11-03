@@ -1,0 +1,7 @@
+<section id="visitors" class="yx-visitors"><h2><span aria-hidden="true">🌍</span> Site Visitors</h2>
+<div class="yx-map-frame" data-visitor-map data-enabled="{{ site.data.visitor_map.enabled }}" data-widget-src="{{ site.data.visitor_map.script_url | escape }}" data-widget-id="{{ site.data.visitor_map.script_id | escape }}">
+<div class="yx-map-placeholder"><img src="{{ '/images/world-map.svg' | relative_url }}" alt="World map backdrop; no visitor locations are plotted." loading="lazy"><div class="yx-map-caption">{% if site.data.visitor_map.enabled and site.data.visitor_map.script_url != '' %}<strong>🌐 Where readers connect from</strong><button type="button" class="yx-map-load">Load visitor map</button>{% else %}<strong>🌐 Visitor map · coming soon</strong><p>Not connected yet. No visitor statistics are displayed.</p>{% endif %}</div></div>
+<div class="yx-map-widget" hidden></div><p class="yx-map-feedback" role="status" aria-live="polite"></p>
+</div>
+{% if site.data.visitor_map.enabled and site.data.visitor_map.script_url != '' %}<p class="yx-small-note">The optional map loads a third-party service only after you choose to load it. <a href="{{ site.data.visitor_map.privacy_url }}">Provider privacy information ↗</a></p>{% endif %}
+</section><script src="{{ '/assets/js/visitor-map.js' | relative_url }}" defer></script>
