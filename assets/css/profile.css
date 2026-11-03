@@ -20,7 +20,7 @@ html{scroll-behavior:smooth;scroll-padding-top:5rem}
 .yx-heading-row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--yx-line);margin-bottom:1rem}
 .yx-heading-row h2{border:0;margin:0;padding-bottom:.5rem}
 .yx-heading-row>a{font-size:.73rem;white-space:nowrap}
-.yx-publication{display:grid;grid-template-columns:155px minmax(0,1fr);gap:1.3rem;padding:1.1rem 0;border-bottom:1px solid var(--yx-line)}
+.yx-publication{display:grid;grid-template-columns:250px minmax(0,1fr);gap:1.3rem;padding:1.1rem 0;border-bottom:1px solid var(--yx-line)}
 .yx-publication:first-child{padding-top:.2rem}
 .yx-publication:last-child{border-bottom:0}
 .yx-pub-cover{min-height:145px;align-self:start;display:flex;flex-direction:column;justify-content:center;gap:.55rem;background:var(--yx-tint);border:1px solid #dce5f0;border-radius:5px;overflow:hidden;color:#244c80!important;padding:1rem;text-align:center}
@@ -28,8 +28,8 @@ html{scroll-behavior:smooth;scroll-padding-top:5rem}
 .yx-cover-venue{font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 .yx-pub-cover strong{font-size:1.03rem;letter-spacing:-.02em}
 .yx-cover-caption{font-size:.63rem;color:var(--yx-muted)}
-.yx-pub-cover img{width:100%;height:145px;object-fit:contain;display:block;margin:0}
-.yx-pub-cover:has(img){padding:0;background:white}
+.yx-pub-cover img{width:100%;height:auto;max-height:210px;object-fit:contain;display:block;margin:0}
+.yx-pub-cover:has(img){padding:.45rem;min-height:0;background:white}
 .yx-publication h3{font-size:.85rem;margin:.4rem 0 .35rem;line-height:1.5}
 .yx-badges{display:flex;gap:.35rem;flex-wrap:wrap}
 .yx-badges span,.yx-status{font-size:.61rem;font-weight:600;line-height:1.5;background:#edf2f8;color:#4b6280;border-radius:3px;padding:.12rem .38rem}
@@ -67,11 +67,53 @@ body:has(.yx-profile) .author__avatar img{max-width:145px;border-radius:50%}
 body:has(.yx-profile) .masthead__menu-item{font-size:.77rem}
 body:has(.yx-profile) #main{max-width:1280px}
 @media(min-width:80em){body:has(.yx-profile) .page{width:calc(100% - 260px);padding-right:0}body:has(.yx-profile) .sidebar{width:220px}}
-@media(max-width:760px){.yx-topics{gap:.8rem}.yx-profile{font-size:15px}.yx-publication{grid-template-columns:115px minmax(0,1fr);gap:.9rem}.yx-pub-cover{min-height:125px;padding:.7rem}.yx-projects{grid-template-columns:1fr}.yx-timeline-item{grid-template-columns:115px minmax(0,1fr);gap:.7rem}.yx-skills>div{grid-template-columns:1fr;gap:.2rem}.yx-heading-row{flex-wrap:wrap;gap:0}.yx-heading-row>a{margin-bottom:.6rem}}
-@media(max-width:480px){.yx-topics{grid-template-columns:1fr;gap:.7rem}.yx-topics>div{border-left:2px solid #dce5f0;padding-left:.7rem}.yx-publication{grid-template-columns:1fr}.yx-pub-cover{display:none}.yx-timeline-item{grid-template-columns:1fr;gap:.15rem}.yx-profile section{margin-bottom:2rem}.yx-news li{grid-template-columns:2.6rem 1fr;gap:.5rem}.yx-profile-links{gap:.8rem}.yx-cv-nav{gap:.5rem .85rem}}
+@media(max-width:760px){.yx-topics{gap:.8rem}.yx-profile{font-size:15px}.yx-publication{grid-template-columns:180px minmax(0,1fr);gap:.9rem}.yx-pub-cover{min-height:125px;padding:.7rem}.yx-projects{grid-template-columns:1fr}.yx-timeline-item{grid-template-columns:115px minmax(0,1fr);gap:.7rem}.yx-skills>div{grid-template-columns:1fr;gap:.2rem}.yx-heading-row{flex-wrap:wrap;gap:0}.yx-heading-row>a{margin-bottom:.6rem}}
+@media(max-width:480px){.yx-topics{grid-template-columns:1fr;gap:.7rem}.yx-topics>div{border-left:2px solid #dce5f0;padding-left:.7rem}.yx-publication{grid-template-columns:1fr}.yx-pub-cover{display:flex;width:100%;max-width:360px;justify-self:center}.yx-timeline-item{grid-template-columns:1fr;gap:.15rem}.yx-profile section{margin-bottom:2rem}.yx-news li{grid-template-columns:2.6rem 1fr;gap:.5rem}.yx-profile-links{gap:.8rem}.yx-cv-nav{gap:.5rem .85rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media(prefers-color-scheme:dark){html[data-theme="dark"]{--yx-accent:#8eb8ec;--yx-muted:#a5b2c5;--yx-line:#384454;--yx-tint:#202d3f;--yx-ink:#d9e2ef}html[data-theme="dark"] .yx-pub-cover{color:#b9d5fa!important;border-color:#415572}html[data-theme="dark"] .yx-badges span,html[data-theme="dark"] .yx-status{background:#2a3b51;color:#c0d2e9}html[data-theme="dark"] .yx-news time{color:#b9c7dc}}
 @media print{.yx-cv-nav,.masthead,.sidebar,.page__footer{display:none!important}.yx-profile{font-size:10pt}.yx-profile section{break-inside:avoid}.page{width:100%!important;float:none!important}.yx-pub-cover{display:none}.yx-publication{display:block}.yx-profile a{color:inherit}.yx-projects{display:block}.yx-project{margin-bottom:.5rem}}
 
 /* Clear the theme's floating columns so long pages cannot overlap the footer. */
 body:has(.yx-profile) .page__footer{position:relative;clear:both;float:none;bottom:auto;margin-top:2rem}
+
+/* Icon, accent, organization and visitor-map additions. */
+.yx-red,.yx-profile .yx-red{color:#b42332!important;font-weight:750}
+.yx-focus{border-left:3px solid #b42332;background:#fff7f7;padding:.65rem .85rem;font-size:.8rem}
+.yx-news-highlight{font-weight:600}
+.yx-profile h2>span[aria-hidden]{margin-right:.3rem}
+.yx-project--highlight{border-color:#e4c3c8}
+.yx-profile .yx-status--red{color:#a32030;background:#fff0f1;font-weight:700}
+.yx-project-details{margin-top:.6rem!important;font-weight:650;font-size:.7rem!important}
+.yx-manuscript{padding:1rem 0 1.2rem;border-bottom:1px solid var(--yx-line)}
+.yx-manuscript h3{margin:.6rem 0 .5rem;font-size:.88rem}
+.yx-manuscript>p,.yx-manuscript li{font-size:.77rem;line-height:1.75}
+.yx-manuscript ul,.yx-manuscript ol{padding-left:1.2rem;margin:.6rem 0}
+.yx-author-note{color:var(--yx-muted);font-size:.67rem!important}
+.yx-visitors{max-width:100%}
+.yx-map-frame{border:1px solid var(--yx-line);border-radius:6px;overflow:hidden;padding:.6rem;background:#fff}
+.yx-map-placeholder{position:relative;overflow:hidden;min-height:200px}
+.yx-map-placeholder>img{width:100%;height:auto;min-height:200px;max-height:320px;object-fit:contain;display:block;margin:0}
+.yx-map-caption{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;text-align:center;padding:1rem;background:rgba(255,255,255,.25)}
+.yx-map-caption>strong{padding:.4rem .7rem;border-radius:4px;background:rgba(255,255,255,.93);font-size:.88rem;color:#33445b}
+.yx-map-caption p{font-size:.7rem;margin:0;background:rgba(255,255,255,.93);padding:.2rem .5rem;color:#526478}
+.yx-map-load{border:0;border-radius:4px;background:#a32030;color:white;padding:.55rem .85rem;cursor:pointer;font:inherit;font-size:.75rem}
+.yx-map-load:disabled{opacity:.6;cursor:wait}
+.yx-map-load:focus-visible{outline:3px solid #25589d;outline-offset:3px}
+.yx-map-widget{min-height:180px;max-width:100%;text-align:center}
+.yx-map-widget img,.yx-map-widget iframe{max-width:100%}
+.yx-map-feedback{font-size:.72rem;color:#a32030;margin:.3rem 0 0!important}
+.yx-profile [hidden]{display:none!important}
+@media(max-width:480px){.yx-focus{font-size:.76rem}.yx-map-caption>strong{font-size:.78rem}}
+html[data-theme="dark"] .yx-focus{background:#30202a}html[data-theme="dark"] .yx-red{color:#ff9ba8!important}
+html[data-theme="dark"] .yx-status--red{background:#482a35;color:#ffbdc5}html[data-theme="dark"] .yx-project--highlight{border-color:#78505d}
+
+/* Small standalone marks inline with institution names; no wide wordmarks or colored panels. */
+.yx-institution-title{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .45rem;margin-bottom:.35rem!important}
+.yx-institution-name{display:inline-flex;align-items:center;gap:.4rem;min-width:0;max-width:100%;color:inherit!important;line-height:1.5}
+.yx-institution-name>span:last-child{min-width:0}
+.yx-institution-mark{display:inline-flex;flex:0 0 26px;align-items:center;justify-content:center;width:26px;height:26px;padding:2px;background:#fff;border:1px solid #edf0f4;border-radius:4px;vertical-align:middle;box-sizing:border-box}
+.yx-institution-mark img{display:block;max-width:100%;max-height:100%;width:100%;height:100%;object-fit:contain;margin:0;border:0;border-radius:0}
+.yx-institution-separator{color:var(--yx-muted);font-weight:400}
+.yx-inline-institution{white-space:normal}
+.yx-inline-institution .yx-institution-mark{width:21px;height:21px;padding:1px;margin:0 .2rem .12rem .08rem;vertical-align:middle}
+@media(max-width:480px){.yx-institution-mark{width:24px;height:24px;flex-basis:24px}.yx-institution-title{gap:.3rem}.yx-institution-name{gap:.35rem}}
