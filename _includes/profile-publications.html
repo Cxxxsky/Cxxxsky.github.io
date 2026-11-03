@@ -1,0 +1,26 @@
+<div class="yx-publications{% if include.compact %} yx-publications--compact{% endif %}">
+{% for pub in site.data.profile_publications %}
+  {% if include.selected and pub.selected != true %}{% continue %}{% endif %}
+  <article class="yx-publication" id="{{ pub.id }}">
+    {% if include.compact != true %}
+    <a class="yx-pub-cover" href="{{ pub.paper_url }}" aria-label="Read {{ pub.title | escape }}">
+      {% if pub.image and pub.image != '' %}
+      <img src="{{ pub.image | relative_url }}" alt="Overview of {{ pub.abbr | escape }}" loading="lazy">
+      {% else %}
+      <span class="yx-cover-venue">{{ pub.label }}</span>
+      <strong>{{ pub.abbr }}</strong>
+      <span class="yx-cover-caption">Medical image analysis</span>
+      {% endif %}
+    </a>
+    {% endif %}
+    <div class="yx-pub-content">
+      <div class="yx-badges"><span>{{ pub.role }}</span><span>{{ pub.label }}</span></div>
+      <h3><a href="{{ pub.paper_url }}">{{ pub.title }}</a></h3>
+      <p class="yx-authors">{{ pub.authors_before }}<strong>Yuxuan Yang</strong>{{ pub.authors_after }}</p>
+      <p class="yx-venue"><em>{{ pub.venue }}</em>, {{ pub.year }}{% if pub.venue_detail %} · {{ pub.venue_detail }}{% endif %}</p>
+      {% if include.compact != true %}<p class="yx-pub-description">{{ pub.description }}</p>{% endif %}
+      <p class="yx-pub-links"><a href="{{ pub.paper_url }}">Paper <span aria-hidden="true">↗</span></a><span>DOI: {{ pub.doi }}</span></p>
+    </div>
+  </article>
+{% endfor %}
+</div>
