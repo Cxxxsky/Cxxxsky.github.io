@@ -22,7 +22,7 @@ repository               : "Cxxxsky/Cxxxsky.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "" # Upload images/profile.png, then set this to "profile.png".
+  avatar           : "头像.jpg" # Stored at images/头像.jpg; the theme adds /images/.
   name             : *name
   pronouns         : # example: "she/her"  
   bio              : "PhD student · AI for Science"
@@ -34,7 +34,7 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # Add your verified Google Scholar profile URL.
+  googlescholar    : "https://scholar.google.com/citations?user=h7xvYWIAAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : # Add your verified ORCID profile URL.
