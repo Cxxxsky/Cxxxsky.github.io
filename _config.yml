@@ -22,7 +22,7 @@ repository               : "Cxxxsky/Cxxxsky.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "头像.jpg" # Stored at images/头像.jpg; the theme adds /images/.
+  avatar           : "头像.jpg"
   name             : *name
   pronouns         : # example: "she/her"  
   bio              : "PhD student · AI for Science"
