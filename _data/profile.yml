@@ -1,11 +1,16 @@
 news:
 - date: '2026'
-  text: DSB-Net, our work on decoupled shape–boundary learning, is under review at ICASSP.
+  text: Spatial Evidence, on learning from spatial molecular measurements, is under review at CVPR.
   icon: 📝
   highlight: true
 - date: '2026'
-  text: Submitted a manuscript on whole-slide image encoding to ISBI.
-  icon: 📤
+  text: A manuscript on whole-slide image encoding is under review at ISBI.
+  icon: 📝
+  highlight: true
+- date: '2026'
+  text: DSB-Net, our work on decoupled shape–boundary learning, is under review at ICASSP.
+  icon: 📝
+  highlight: true
 - date: '2026'
   text: Started my Ph.D. at HIT Shenzhen, jointly trained at SLAI.
   icon: 🎓
@@ -14,16 +19,19 @@ news:
   icon: 📘
 projects:
 - title: Whole-Slide Image Encoding
-  status: Submitted to ISBI
-  kind: Research project
-  text: Visual representation learning and image encoding for whole-slide pathology images. The manuscript is under
-    review.
+  status: ISBI · Under review
+  kind: Research manuscript
+  text: Visual representation learning and image encoding for whole-slide pathology images.
   icon: 🔬
+  highlight: true
+  details_url: /publications/#manuscript-wsi-encoding
 - title: Spatial Evidence
-  status: In progress
-  kind: Research project
-  text: Ongoing research on learning from spatial molecular measurements.
+  status: CVPR · Under review
+  kind: Research manuscript
+  text: Learning from spatial molecular measurements.
   icon: 🧬
+  highlight: true
+  details_url: /publications/#manuscript-spatial-evidence
 - title: Virtual Cells & Cell Foundation Models
   status: Exploration
   kind: Research direction

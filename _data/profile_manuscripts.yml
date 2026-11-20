@@ -1,3 +1,13 @@
+- id: wsi-encoding
+  title: Whole-Slide Image Encoding
+  status: Under review at ISBI
+  icon: 🔬
+  summary: Visual representation learning and image encoding for whole-slide pathology images.
+- id: spatial-evidence
+  title: Spatial Evidence
+  status: Under review at CVPR
+  icon: 🧬
+  summary: Learning from spatial molecular measurements.
 - id: dsb-net
   title: Decoupling Shape Priors from Boundary Details for Segmentation in Ambiguous Medical Images
   abbr: DSB-Net
@@ -6,5 +16,6 @@
   icon: 🧩
   authors_html: <strong>Yuxuan Yang<sup>†</sup></strong>, Xinyue Zhang<sup>†</sup>, Piaolin Hu, Chen Zhong, Ruohan
     Ma, Yong Guo, Gang Li, Jupeng Li<sup>*</sup>
+  author_note: † Equal contribution. * Corresponding author.
   summary: DSB-Net decouples shape-prior learning from boundary-detail refinement for segmentation in ambiguous
     medical images.
